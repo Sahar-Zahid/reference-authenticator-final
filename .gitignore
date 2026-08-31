@@ -1,0 +1,22 @@
+# Secrets - NEVER commit these
+.env
+backend/.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# PyInstaller build output
+build/
+dist/
+*.spec
+
+# Generated at runtime
+backend/exports/
+exports/
+
+# Editor/OS
+.vscode/
+.idea/
+.DS_Store
