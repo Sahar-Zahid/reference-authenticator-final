@@ -1,0 +1,11 @@
+requests
+rapidfuzz
+PyMuPDF
+crewai[litellm]
+pandas
+openpyxl
+pydantic
+flask
+python-dotenv
+groq
+google-genai

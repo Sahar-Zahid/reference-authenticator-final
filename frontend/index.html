@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academic Reference Verification System</title><link rel="stylesheet" href="style.css"></head>
+<body><main class="container"><header class="header"><h1>📚 Academic Reference Verification System</h1>
+<p>Crossref • OpenAlex • DBLP • Semantic Scholar • PubMed • AI Verification</p></header>
+<section class="card"><div class="tabs"><button class="tab active" data-mode="single">Single Reference</button><button class="tab" data-mode="list">Reference List</button><button class="tab" data-mode="pdf">PDF</button></div>
+<div id="single-panel" class="panel"><label for="single-input">Academic Reference</label><textarea id="single-input" rows="6" placeholder="Paste one academic reference here..."></textarea><button id="single-button" class="verify-btn">🔍 Verify Reference</button></div>
+<div id="list-panel" class="panel hidden"><label for="list-input">Reference List</label><textarea id="list-input" rows="12" placeholder="Paste your reference list here..."></textarea><button id="list-button" class="verify-btn">🔍 Verify All References</button></div>
+<div id="pdf-panel" class="panel hidden"><label for="pdf-input">Research Paper PDF</label><div id="drop-zone" class="drop-zone"><div class="upload-icon">📄</div><p><strong>Choose a PDF</strong> or drag it here</p><span id="file-name">No file selected</span><input id="pdf-input" type="file" accept=".pdf,application/pdf"></div><button id="pdf-button" class="verify-btn">📄 Extract & Verify References</button></div></section>
+<section id="loading" class="loading hidden"><div class="spinner"></div><span>Verifying references... This may take a little while.</span></section>
+<section id="message" class="message hidden"></section>
+<section id="results-section" class="results hidden"><div class="results-header"><h2>Verification Results</h2><a id="download-link" class="download-btn hidden" href="#" download>⬇ Download Excel</a></div><div id="results"></div></section></main><script src="script.js"></script></body></html>
