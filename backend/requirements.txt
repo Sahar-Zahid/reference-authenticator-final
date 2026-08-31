@@ -1,11 +1,17 @@
+# Core backend dependencies
 requests
 rapidfuzz
-PyMuPDF
-crewai[litellm]
+pymupdf
+crewai[litellm,google-genai]
+litellm
+tiktoken
 pandas
 openpyxl
 pydantic
-flask
-python-dotenv
 groq
 google-genai
+
+# Lightweight API adapter for the HTML/CSS/JS frontend
+flask
+flask-cors
+python-dotenv
